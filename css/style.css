@@ -11,9 +11,13 @@
 
 :root{
    
-    --white: #fff;
-    --black: #2F343A;
-    --cinza: #717D8C;
+    --white: #e6e8e3;
+    --black: #65727a;
+    --color1:#e6e8e3;
+    --color2:#d7dacf;
+    --color3:#bec3bc;
+    --color4:#8f9a9c;
+    --color5:#65727a;
 }
 
 body{
@@ -29,6 +33,7 @@ body{
     width: 100%;
     background: var(--white);
     transition: all 0.5s;
+    position: fixed;
 }
 
 .navegacao .logo{
@@ -59,8 +64,9 @@ font-weight: 600;
     font-size: 1.5rem;
 }
 
-menu{
+.menu{
     cursor: pointer;
+    display: none;
 }
 
 .menu .bar{
@@ -76,4 +82,50 @@ menu{
 .menu .bar:nth-child(1)
 .menu .bar:nth-child(3){
     background-color: #717D8C;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.home-text{
+    max-width: 37rem;
+}
+
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: ;
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p{
+    margin-bottom: 4rem;
+}
+
+.home-btn{
+padding: 15px 45px;
+background: red;
+color: #fff;
+border-radius: 10px;
+font-weight: 500;
+transition: all 0.5s;
+}
+
+.home-btn:hover{
+    background-color: green;
+}
+
+.home-img img{
+    width: 100%;
 }
