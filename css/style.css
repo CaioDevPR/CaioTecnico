@@ -11,8 +11,8 @@
 
 :root{
    
-    --white: #e6e8e3;
-    --black: #65727a;
+    --white: #000;
+    --bg-color: #fff ;
     --color1:#e6e8e3;
     --color2:#d7dacf;
     --color3:#bec3bc;
