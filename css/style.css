@@ -11,10 +11,10 @@
 
 :root{
    
-    --white: #000;
+    --white: #000000;
     --bg-color: #fff ;
     --color1:#e6e8e3;
-    --color2:#d7dacf;
+    --color2:#8411c4;
     --color3:#bec3bc;
     --color4:#8f9a9c;
     --color5:#65727a;
@@ -37,7 +37,7 @@ body{
 }
 
 .navegacao .logo{
-color: var(--black);   
+color: var(--color2);   
 font-size: 1.7rem;
 font-weight: 600;
 }
@@ -49,14 +49,14 @@ font-weight: 600;
 }
 
 .navegacao ul li a{
-    color: var(--black);
+    color: var(--color2);
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
 }
 
 .navegacao ul li a:hover{
-    color: var(--black);
+    color: var(--color1);
 }
 
 .navegacao i{
@@ -128,4 +128,26 @@ transition: all 0.5s;
 
 .home-img img{
     width: 100%;
+}
+
+@media (max-width: 785px){
+    .navegacao{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        height: 100%;
+        flex-direction: column;
+        background-color: var();
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px;
+    }
 }
