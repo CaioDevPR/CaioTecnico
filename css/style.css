@@ -12,16 +12,16 @@
 :root{
    
     --white: #000000;
-    --bg-color: #fff ;
-    --color1:#e6e8e3;
-    --color2:#8411c4;
-    --color3:#bec3bc;
-    --color4:#8f9a9c;
-    --color5:#65727a;
+    --cor1: #134074;
+    --cor2: #13315c ;
+    --cor3:#0b2545;
+    --cor4:#8da9c4;
+    --cor5:#eef4ed;
+    
 }
 
 body{
-    background: var(--black);
+    background: var(--cor5);
 }
 
 .navegacao{
@@ -31,13 +31,13 @@ body{
     padding: 18px 40px;
     box-shadow: 0 0.1rem 0.5rem #ccc;
     width: 100%;
-    background: var(--white);
+    background: var(--bg-color);
     transition: all 0.5s;
     position: fixed;
 }
 
 .navegacao .logo{
-color: var(--color2);   
+color: var(--cor3);   
 font-size: 1.7rem;
 font-weight: 600;
 }
@@ -49,14 +49,14 @@ font-weight: 600;
 }
 
 .navegacao ul li a{
-    color: var(--color2);
+    color: var(--cor1);
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
 }
 
 .navegacao ul li a:hover{
-    color: var(--color1);
+    color: var(--cor3);
 }
 
 .navegacao i{
@@ -66,6 +66,7 @@ font-weight: 600;
 
 .menu{
     cursor: pointer;
+    display: none;
    
 }
 
@@ -74,7 +75,7 @@ font-weight: 600;
     width: 28px;
     height: 3px;
     border-radius: 3px;
-    background: var(--color1);
+    background: var(--cor4);
     margin: 5px auto;
     transition: all 0.3s;
 }
@@ -115,7 +116,7 @@ font-weight: 600;
 
 .home-btn{
 padding: 15px 45px;
-background: red;
+background: var(--cor1);
 color: #fff;
 border-radius: 10px;
 font-weight: 500;
@@ -123,7 +124,7 @@ transition: all 0.5s;
 }
 
 .home-btn:hover{
-    background-color: green;
+    background-color: var(--cor4);
 }
 
 .home-img img{
@@ -192,3 +193,63 @@ transition: all 0.5s;
         width: 125%;
     }
 }
+
+
+.contat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: #1d2d3d;
+    width: 500px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+ }
+    
+.contat h2{
+    color:  #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.contat form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+
+
