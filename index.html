@@ -15,9 +15,9 @@
         <nav class="navegacao">
             <a href="#" class="logo">Rapida <span>Informatica</span></a>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-itens">Inicio</a></li>
-                <li><a href="#" class="nav-itens">Contato</a></li>
-                <li><a href="#" class="nav-itens">Menu</a></li>
+                <li><a href="#index" class="nav-itens">Inicio</a></li>
+                <li><a href="https://wa.me/5543988614820" target="_blank" class="nav-itens">Contato</a></li>
+                <li><a href="#" class="nav-itens">Teste Internet</a></li>
                 <i class="bx bx-search"></i>
             </ul>
             <div class="menu">
@@ -30,17 +30,35 @@
     <main>
         <section class="home">
             <div class="home-text">
-               <h4 class="text-h4">Bem Vindo</h4>
+               <h4 class="text-h4"></h4>
                <h1 class="text-h1"></h1>
-               <p>Seu computador devolvido em 1 hora</p>
-               <a href="#" class="home-btn">Faça seu Orçamento</a>
-            </div>
+               
+
+               
+
+            
             <div class="home-img">
-                <img src="/imagens/Soluções tecnologicas.png" alt="fundo website">
+                <img src="/imagens/" alt="fundo website">
               
             </div>
         </section>
+        <section class="contat">
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu Nome" autocomplete="off">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu Email" autocomplete="off">
+                <label>Menssagem</label>
+                <textarea name="message"  cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="2a7d2a56-8cee-497a-8b77-12a073dde741">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+        </section>
     </main>
     <script src="/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
